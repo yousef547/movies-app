@@ -1,0 +1,81 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    background-color: black;
+}
+.bg-darks {
+    background-color: black !important;
+}
+
+.overlay {
+    top: 100%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    transition: all 0.5s ease-in-out;
+    background-color: rgb(255, 255, 255, 0.5)
+}
+.col-md-6:hover .overlay{
+    top: 0;
+}
+#contact-us button{
+    box-shadow:rgb(220, 53, 69)  0px 0px 10px 5px;
+}
+#contact-us input {
+    color: #fff;
+}
+#side-bar {
+    z-index: 99999;
+    height: 100vh;
+    top: 0;
+    left: 0;
+}
+.inside {
+    width: 200px;
+    background-color:#000;
+}
+
+.inside a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: lighter;
+    transition: all 0.5s ease-in-out;
+}
+.inside a:hover {
+    color: #ff655c;
+}
+.inside>div {
+    height: 55%;
+}
+.outside {
+    width: 50px;
+    background-color:#fff;
+    cursor: pointer;
+    font-size: 25px;
+}
+.validtion {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-radius: 0.25rem;
+    border: 1px solid #f5c6cb;
+    margin-top: 5px;
+    padding: 10px;
+    display: none;
+}
+.fa-times {
+    display: none;
+}
+.anmat {
+    opacity: 0;
+    padding-top: 500px;
+}
+/**responsive**/
+@media (max-width:580px)
+{
+		.myM 
+	{
+		margin-left: 3.8rem!important;
+
+	}
+}

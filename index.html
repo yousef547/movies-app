@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <section id="search-movies" class="my-5">
+        <div class="container">
+            <div class="row">
+                <div class="one col-md-6  py-3">
+                    <div class="border-bottom">
+                        <input type="text" placeholder="get movies by word" id="words" class="form-control bg-darks text-center border-0 text-white">
+                    </div>
+                </div>
+                <div class="one col-md-6  py-3">
+                    <div class="border-bottom">
+                        <input type="text" placeholder="search" id="search" class="form-control border-0 bg-darks text-center text-white">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="movies">
+        <div class="container">
+            <div class="row" id=display>
+                <!-- get data from Api with ajex -->
+            </div>
+        </div>
+    </section>
+    <section id="contact-us">
+        <div class="container">
+            <h2 class=" text-white my-5">contactUs...</h2>
+            <div class="row">
+                <div class="col-md-6 my-2">
+                    <div class="border-bottom">
+                        <input type="text" placeholder="Enter Your Name" id="name" class="form-control bg-darks text-center border-0 ">
+                    </div>
+                    <div class="validtion name">Your Name is not valid</div>
+                </div>
+                <div class="col-md-6 my-2">
+                    <div class="border-bottom">
+                        <input type="email" placeholder="Enter Email" id="email" class="form-control bg-darks text-center border-0 ">
+                    </div>
+                    <div class="validtion email">entre valid email</div>
+                </div>
+                <div class="col-md-6 my-2">
+                    <div class="border-bottom">
+                        <input type="text" placeholder="Enter Your Phone" id="phone" class="form-control bg-darks text-center border-0 ">
+                    </div>
+                    <div class="validtion phone">entre valid phone</div>
+                </div>
+                <div class="col-md-6 my-2">
+                    <div class="border-bottom">
+                        <input type="text" placeholder="Enter Age" id="age" class="form-control bg-darks text-center border-0 ">
+                    </div>
+                    <div class="validtion age">entre valid Age</div>
+                </div>
+                <div class="col-md-6 my-2">
+                    <div class="border-bottom">
+                        <input type="password" placeholder="Enter Password" id="password" class="form-control bg-darks text-center border-0 ">
+                    </div>
+                    <div class="validtion password">entre valid password *Minimum eight characters, at least one letter and one number:*</div>
+                </div>
+                <div class="col-md-6 my-2">
+                    <div class="border-bottom">
+                        <input type="password" placeholder="Enter Repassword" id="repassword" class="form-control bg-darks text-center border-0 ">
+                    </div>
+                    <div class="validtion repassword">enter valid Repassword</div>
+                </div>
+            </div>
+            <button id="btns" class="btn btn-outline-danger mt-3 mb-5" disabled>submit</button>
+        </div>
+    </section>
+    <section id="side-bar" class="d-flex position-fixed">
+        <div class="inside py-4 ps-4 ">
+            <ul class="list-unstyled  ">
+                <li class="anmat " ><a  id="movie/now_playing" class="link   ">Now playing</a></li>
+                <li class="anmat " ><a  id="movie/popular" class="link">Popular</a></li>
+                <li class="anmat " ><a  id="movie/top_rated" class="link">Top Rated</a></li>
+                <li class="anmat " ><a  id="trending/all/day" class="link">Trending</a></li>
+                <li class="anmat " ><a  id="movie/upcoming" class="link">Upcoming</a></li>
+                <li class="anmat " ><a href="" >Contact Us</a></li>
+            </ul>
+            <div class="d-flex flex-column  justify-content-end">
+                <p>
+                    <a href=""><i class="fab fa-facebook-f me-3"></i></a>
+                    <a href=""><i class="fab fa-twitter me-3"></i></a>
+                    <a href=""><i class="fas fa-globe me-3"></i></a>
+                </p>
+                
+                <p class="fw-lighter text-white-50">Copyright Â© 2019 All Rights Reserved.</p>
+            </div>
+        </div>
+        <div class="outside py-4 d-flex flex-column justify-content-between text-center">
+            <div class="text-center">
+                <img src="image/logo (1).png" class="w-75 " alt="">
+            </div>
+            <div >
+                <i class="fa text-dark fa-align-justify times"></i>
+                <i class="fa fa-align-justify fa-times"></i>
+            </div>
+            <p class="w-100"> 
+                <a class="text-dark p-3"><i class="fas fa-globe me-3"></i></a>
+                <a class="text-dark p-3"><i class="fas fa-share-alt me-3"></i></a>
+            </p>
+            
+        </div>
+    </section>
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js" type="module"></script>
+    
+   
+</body>
+</html>
