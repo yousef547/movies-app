@@ -3,11 +3,21 @@
 }
 body {
     background-color: black;
+    
+}
+body>section:not(#side-bar){
+    width:calc(100% - 50px);
+    margin-left: 50px;
+
+   
 }
 .bg-darks {
     background-color: black !important;
 }
-
+#search-movies{
+    width: 200px;
+    
+}
 .overlay {
     top: 100%;
     left: 0;
@@ -73,9 +83,5 @@ body {
 /**responsive**/
 @media (max-width:580px)
 {
-		.myM 
-	{
-		margin-left: 3.8rem!important;
-
-	}
+	
 }
